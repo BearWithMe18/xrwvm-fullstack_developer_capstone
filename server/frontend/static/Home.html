@@ -17,16 +17,16 @@ const logout = async () => { // Remove 'e' if not used
   if (json) {
     let username = sessionStorage.getItem('username');
     sessionStorage.removeItem('username');
+    alert("Logging out "+username+"...");
     window.location.href = window.location.origin;
     window.location.reload();
-    alert("Logging out "+username+"...")
   }
   else {
     alert("The user could not be logged out.")
   }
   } catch (error) {
     console.error("Fetch error: ", error);
-    alert("An error occurred while logging out.";
+    alert("An error occurred while logging out.");
   }
 };
 
