@@ -1,4 +1,4 @@
-import { Int32 } from 'mongodb';
+/*jshint esversion: 8 */
 import { Schema as _Schema, model as _model } from 'mongoose';
 
 const Schema = _Schema;
